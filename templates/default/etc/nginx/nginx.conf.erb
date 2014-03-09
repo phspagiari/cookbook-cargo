@@ -1,0 +1,13 @@
+daemon on;
+error_log error.log;
+pid /var/run/nginx.pid;
+
+events {
+use epoll;
+worker_connections 4096;
+}
+
+http {
+server_names_hash_bucket_size 256;
+include <%= @server_location %>;
+}
