@@ -21,6 +21,7 @@ Usage
     "aws_secret_key":"",
     "bucket":"",
     "base_domain":"",
+  },
   "run_list": [
     "recipe[cargo]"
   ]
